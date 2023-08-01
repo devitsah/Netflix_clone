@@ -1,0 +1,210 @@
+*{
+    background: #000;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    width:100%;
+    height:100vh;
+    background-image:url(images/cover.jpg);
+    background-size:cover;
+    background-position:center;
+    padding:0;
+    position:relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    padding-top: 5px;
+    border: 0;
+    outline: 0;
+    background:#E50914;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-right: 20px 40px;
+
+}
+.langbtn{
+display: inline-flex;
+align-items: center;
+background: transparent;
+border: 1px;
+font-size: 12px;
+}
+.header-content{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    margin-top: 100px;
+    background: transparent;
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background-color: transparent;
+    opacity: 1;
+}
+.email-signup{
+    background:#fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 30px;
+    border:100%;
+    
+}
+.email-signup input{
+    color: #000;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 50px;
+    background: transparent;
+
+}
+h3,p{
+    background: transparent;
+}
+.email-signup button{
+    background-color: #E50914;
+    border: 0;
+    outline: 0;
+    font-size: 16;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    padding: 10px;
+}
+.row{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-colmn{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    padding: 50px;
+}
+.img-colm{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    
+
+}
+.img-colm img{
+    bottom: 20px;
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+.features h2{
+    font-size: 50px;
+    line-height: 50px;
+
+}
+.faq {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-weight: 600;
+    font-size:40px;
+}
+.unlist{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.unlist li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.unlist li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-weight: 600;
+    background: #303030;
+    cursor: pointer;
+    position: relative;
+
+}
+label::after{
+    content: '+';
+    font-size: 33px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.unlist .content{
+    background: #303030;
+    text-align: left;
+    padding:0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+ .unlist input[type="radio"]:checked +label+.content{
+    max-height: 650px;
+    padding:30px 20px;
+   
+}
+.unlist li label:hover{
+    background:red;
+
+}
+.unlist input[type="radio"]:checked +label::after{
+    transform: rotate(135deg);
+}
+/*------footer-------*/
+.footer{
+    padding: 50px ;
+    border-top: 6px solid#333;
+    color: #777;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight:400;
+    margin-bottom: 30px;
+}
+.footer .colm{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    
+}
+.footer .colm a{
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .row{
+    align-items: flex-start;/*------All the links are starting at same position----*/
+    padding: 20px ;
+}
+.cpyright{
+    font-size: 16px;
+    color: #777;
+}
+
